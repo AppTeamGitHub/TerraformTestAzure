@@ -35,8 +35,8 @@ resource "azurerm_subnet" "sn" {
   address_prefixes       = ["10.0.1.0/24"]
 }
 # Create our Azure Storage Account - tfsa
-resource "azurerm_storage_account" "tfsa-azure" {
-  name                     = "tfsa-azure"
+resource "azurerm_storage_account" "tfsaazure" {
+  name                     = "tfsaazure"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
